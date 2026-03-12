@@ -1,0 +1,23 @@
+{
+    "name": "repro/pest-type-coverage-race",
+    "description": "Minimal reproduction of pest-plugin-type-coverage cache race condition",
+    "type": "project",
+    "require": {
+        "php": "^8.3"
+    },
+    "require-dev": {
+        "pestphp/pest": "^4.0",
+        "pestphp/pest-plugin-type-coverage": "4.0.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "stable"
+}
